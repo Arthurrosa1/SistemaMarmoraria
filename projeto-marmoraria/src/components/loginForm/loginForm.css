@@ -1,0 +1,126 @@
+.login-form {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #12151c;
+}
+
+.box {
+    width: 430px;
+}
+
+.box h1 {
+    color: white;
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.box p {
+    color: #9ca3af;
+    margin-bottom: 40px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    background: #1b1f27;
+    border: 1px solid #2d333d;
+    border-radius: 10px;
+    padding: 18px;
+    margin-bottom: 20px;
+    color: #7d8590;
+}
+
+.input-group input {
+    flex: 1;
+    margin-left: 15px;
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 18px;
+    background: #3764ff;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: .3s;
+
+}
+
+button:hover {
+    background: #2452f0;
+}
+
+.forgot-password {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.forgot-password a {
+    color: #2452f0;
+    text-decoration: none;
+}
+
+.linha-horizontal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #ffffff9d;
+}
+
+.linha-horizontal span {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #64646481;
+}
+
+.google-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.google-login button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 20px;
+    background: transparent;
+    border: 1px solid #cccccc59;
+    border-radius: 10px;
+    color: #ccc;
+    font-size: 17px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.google-login button img {
+    width: 25px;
+    height: 25px;
+}
+
+.register {
+    text-align: center;
+    color: #9ca3af;
+    margin-top: 40px;
+}
+
+.register a {
+    color: #2452f0;
+    text-decoration: none;
+}

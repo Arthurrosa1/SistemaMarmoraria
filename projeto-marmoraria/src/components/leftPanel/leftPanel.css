@@ -1,0 +1,58 @@
+.left-panel{
+
+    width:50%;
+
+    background-image:url("../../assets/login.png");
+
+    background-size:cover;
+
+    background-position:center;
+
+    position:relative;
+
+}
+
+.overlay{
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,.65);
+
+    color:white;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    padding:80px;
+
+}
+
+.overlay h1{
+
+    color:#d8b16c;
+
+    margin-bottom:50px;
+
+}
+
+.overlay h2{
+
+    font-size:45px;
+
+    margin-bottom:25px;
+
+}
+
+.overlay p{
+
+    color:#d4d4d4;
+
+    width:450px;
+
+    line-height:30px;
+
+}
