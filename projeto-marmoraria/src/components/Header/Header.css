@@ -1,0 +1,49 @@
+.header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:40px;
+
+}
+
+.header h1{
+
+    color:white;
+
+    font-size:34px;
+
+}
+
+.header p{
+
+    color:#94A3B8;
+
+}
+
+.user{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:25px;
+
+    color:white;
+
+    font-size:22px;
+
+}
+
+.user img{
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:50%;
+
+}

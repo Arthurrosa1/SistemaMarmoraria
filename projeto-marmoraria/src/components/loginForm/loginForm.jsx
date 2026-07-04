@@ -2,8 +2,17 @@ import "./loginForm.css";
 
 import { FaEnvelope } from "react-icons/fa";
 import { FaLock } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 function LoginForm() {
+
+    const navigate = useNavigate();
+
+    function entrar() {
+
+        navigate("/dashboard");
+
+    }
 
     return (
 
@@ -41,16 +50,13 @@ function LoginForm() {
 
                 </div>
 
-
-                <button>
-
-                    Entrar
-
-                </button>
-
                 <div className="forgot-password">
-                    <a href="#">Esqueceu a senha?</a>
+                    <a href="#">Esqueci minha senha</a>
                 </div>
+
+                <button onClick={entrar}>
+                    Entrar
+                </button>
 
                 <div className="linha-horizontal">
                     <span></span>

@@ -69,13 +69,13 @@ button:hover {
 
 
 .forgot-password {
-    margin-top: 20px;
+    margin: 20px 0 40px 0;
     text-align: right;
 
 }
 
 .forgot-password a {
-    color: #2452f0;
+    color: #3764ff;
     text-decoration: none;
 }
 
@@ -110,7 +110,7 @@ button:hover {
     align-items: center;
     gap: 10px;
     padding: 15px 20px;
-    background: transparent;
+    background: #1c2029;
     border: 1px solid #cccccc59;
     border-radius: 10px;
     color: #ccc;
@@ -131,6 +131,6 @@ button:hover {
 }
 
 .register a {
-    color: #2452f0;
+    color: #3764ff;
     text-decoration: none;
 }
