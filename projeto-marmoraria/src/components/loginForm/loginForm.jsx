@@ -11,20 +11,24 @@ function LoginForm() {
 
             <div className="box">
 
+
                 <h1>Bem-vindo!</h1>
 
-                <p>Faça login para continuar.</p>
+                <p>Faça login para acessar sua conta.</p>
 
+                <h2>Email</h2>
                 <div className="input-group">
 
                     <FaEnvelope />
 
                     <input
                         type="email"
-                        placeholder="Email"
+                        placeholder="meuemail@exemplo.com"
                     />
 
                 </div>
+
+                <h2>Senha</h2>
 
                 <div className="input-group">
 
@@ -32,7 +36,7 @@ function LoginForm() {
 
                     <input
                         type="password"
-                        placeholder="Senha"
+                        placeholder="Minhasenha123"
                     />
 
                 </div>
@@ -45,7 +49,6 @@ function LoginForm() {
                 </button>
 
                 <div className="forgot-password">
-
                     <a href="#">Esqueceu a senha?</a>
                 </div>
 

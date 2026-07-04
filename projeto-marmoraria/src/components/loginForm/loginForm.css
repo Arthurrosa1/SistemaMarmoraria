@@ -6,6 +6,14 @@
     background: #12151c;
 }
 
+h2{
+    color: white;
+    font-size: 18px;
+    margin-bottom: 7px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+
 .box {
     width: 430px;
 }
@@ -59,9 +67,11 @@ button:hover {
     background: #2452f0;
 }
 
+
 .forgot-password {
     margin-top: 20px;
     text-align: right;
+
 }
 
 .forgot-password a {

@@ -8,7 +8,7 @@ function LeftPanel(){
 
             <div className="overlay">
 
-                <h1>MARMORARIA</h1>
+                <h1>Bem-vindo!</h1>
 
                 <h2>
                     Gestão completa
