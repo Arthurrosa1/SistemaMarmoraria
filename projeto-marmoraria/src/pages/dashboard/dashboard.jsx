@@ -2,6 +2,7 @@ import "./Dashboard.css";
 
 import Sidebar from "../../components/Sidebar/Sidebar";
 import Header from "../../components/Header/Header";
+import DashboardCards from "../../components/DashboardCards/DashboardCards";
 
 function Dashboard() {
   return (
@@ -9,15 +10,13 @@ function Dashboard() {
 
       <Sidebar />
 
-      <div className="dashboard-content">
+      <main className="content">
 
         <Header />
 
-        <div className="cards">
+        <DashboardCards />
 
-        </div>
-
-      </div>
+      </main>
 
     </div>
   );

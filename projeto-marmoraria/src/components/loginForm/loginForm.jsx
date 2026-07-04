@@ -10,7 +10,7 @@ function LoginForm() {
 
     function entrar() {
 
-        navigate("/dashboard");
+        navigate("/Dashboard");
 
     }
 
