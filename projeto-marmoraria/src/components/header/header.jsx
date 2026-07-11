@@ -1,4 +1,4 @@
-import "./Header.css";
+import "./header.css";
 
 import { FaBell } from "react-icons/fa";
 

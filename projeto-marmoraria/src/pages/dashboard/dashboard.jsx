@@ -1,8 +1,8 @@
-import "./Dashboard.css";
+import "./dashboard.css";
 
-import Sidebar from "../../components/Sidebar/Sidebar";
-import Header from "../../components/Header/Header";
-import DashboardCards from "../../components/DashboardCards/DashboardCards";
+import Sidebar from "../../components/sidebar/sidebar";
+import Header from "../../components/header/header";
+import DashboardCards from "../../components/dashboardCards/dashboardCards";
 
 function Dashboard() {
   return (

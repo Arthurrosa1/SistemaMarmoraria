@@ -1,6 +1,6 @@
-import "./DashboardCards.css";
+import "./dashboardCards.css";
 
-import DashboardCard from "../DashboardCard/DashboardCard";
+import DashboardCard from "../dashboardCard/dashboardCard";
 
 import {
   FaClipboardList,
