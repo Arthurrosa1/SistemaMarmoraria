@@ -1,10 +1,10 @@
-.dashboard {
-  display: flex;
-  min-height: 100vh;
-  background: #0f172a;
+.dashboard{
+    display:flex;
+    min-height:100vh;
+    background:#f5f7fb;
 }
 
-.content {
-  flex: 1;
-  padding: 30px;
+.dashboard-content{
+    flex:1;
+    padding:30px;
 }

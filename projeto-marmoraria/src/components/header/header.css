@@ -1,49 +1,153 @@
 .header{
-
     display:flex;
-
     justify-content:space-between;
-
     align-items:center;
-
-    margin-bottom:40px;
-
-}
-
-.header h1{
-
-    color:white;
-
-    font-size:34px;
+    background:white;
+    padding:20px 30px;
+    border-radius:18px;
+    border:1px solid #0000001e;
+    box-shadow:0 8px 25px rgba(0,0,0,.05);
 
 }
 
-.header p{
-
-    color:#94A3B8;
-
-}
-
-.user{
-
+.header-left{
     display:flex;
-
     align-items:center;
-
-    gap:25px;
-
-    color:white;
-
-    font-size:22px;
+    gap:20px;
 
 }
 
-.user img{
-
+.menu-button{
     width:45px;
-
     height:45px;
+    border:none;
+    border-radius:12px;
+    background:#f3f4f6;
+    cursor:pointer;
+    font-size:20px;
 
+}
+
+.menu-button:hover{
+    transform:scale(1.1);
+    background-color:transparent;
+}
+
+.bars{
+    color:#000;
+}
+
+.header-left h2{
+
+    color:#111827;
+
+    margin-bottom:4px;
+
+}
+
+.header-left span{
+    color:#6b7280;
+    font-size:14px;
+
+}
+
+.header-center{
+    flex:1;
+    display:flex;
+    justify-content:center;
+
+}
+
+.search-box{
+    width:450px;
+    background:#f3f4f6;
+    border-radius:14px;
+    display:flex;
+    align-items:center;
+    gap:15px;
+    padding:0 18px;
+    height:50px;
+    border:1px solid #0000001e;
+}
+
+.search-box svg{
+    color:#6b7280;
+
+}
+
+.search-box input{
+    border:none;
+    outline:none;
+    background:transparent;
+    width:100%;
+    font-size:15px;
+
+}
+
+.header-right{
+    display:flex;
+    align-items:center;
+    gap:18px;
+
+}
+
+.header-right button{
+    width:45px;
+    height:45px;
+    border:none;
+    border-radius:12px;
+    background:#ffffff;
+    cursor:pointer;
+    position:relative;
+    font-size:18px;
+
+}
+
+.notification-icon,
+.config-icon{
+    color: #000;
+
+}
+
+.header-right button:hover{
+    transform:scale(1.1);
+    color:white;
+
+}
+
+.notification{
+    position:absolute;
+    top:-4px;
+    right:-2px;
+    width:18px;
+    height:18px;
+    background:#ef4444;
+    color:white;
     border-radius:50%;
+    font-size:11px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 
+}
+
+.profile{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin-left:10px;
+}
+
+.avatar{
+    font-size:42px;
+    color:#2563eb;
+}
+
+.profile strong{
+    display:block;
+    color:#111827;
+}
+
+.profile small{
+    color:#6b7280;
 }

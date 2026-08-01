@@ -7,17 +7,20 @@ import {
   FaBoxes,
   FaWarehouse,
   FaIndustry,
+  FaTruck,
   FaDollarSign,
-  FaCog,
   FaChartLine,
+  FaCog,
   FaUserCircle,
 } from "react-icons/fa";
+
+import { NavLink } from "react-router-dom";
 
 function Sidebar() {
   return (
     <aside className="sidebar">
 
-      <div className="logo">
+      <div className="sidebar-logo">
 
         <div className="logo-icon">
           ◈
@@ -30,76 +33,76 @@ function Sidebar() {
 
       </div>
 
-      <div className="menu-title">
-        Principal
-      </div>
+      <div className="sidebar-section">
+        <span>PRINCIPAL</span>
 
-      <nav>
-
-        <a className="active" href="#">
+        <NavLink to="/dashboard">
           <FaHome />
           Dashboard
-        </a>
+        </NavLink>
 
-        <a href="#">
+        <NavLink to="/pedidos">
           <FaClipboardList />
           Pedidos
-        </a>
+        </NavLink>
 
-        <a href="#">
+        <NavLink to="/clientes">
           <FaUsers />
           Clientes
-        </a>
+        </NavLink>
 
-        <a href="#">
+        <NavLink to="/materiais">
           <FaBoxes />
           Materiais
-        </a>
+        </NavLink>
 
-        <a href="#">
+        <NavLink to="/estoque">
           <FaWarehouse />
           Estoque
-        </a>
+        </NavLink>
 
-        <a href="#">
+        <NavLink to="/producao">
           <FaIndustry />
           Produção
-        </a>
+        </NavLink>
 
-      </nav>
+        <NavLink to="/instalacoes">
+          <FaTruck />
+          Instalações
+        </NavLink>
 
-      <div className="menu-title">
-        Gestão
       </div>
 
-      <nav>
+      <div className="sidebar-section">
 
-        <a href="#">
+        <span>GESTÃO</span>
+
+        <NavLink to="/financeiro">
           <FaDollarSign />
           Financeiro
-        </a>
+        </NavLink>
 
-        <a href="#">
+        <NavLink to="/relatorios">
           <FaChartLine />
           Relatórios
-        </a>
+        </NavLink>
 
-        <a href="#">
+        <NavLink to="/configuracoes">
           <FaCog />
           Configurações
-        </a>
+        </NavLink>
 
-      </nav>
+      </div>
 
-      <div className="profile">
+      <div className="sidebar-user">
 
-        <FaUserCircle className="profile-icon"/>
+        <FaUserCircle className="user-icon"/>
 
         <div>
 
           <strong>Arthur Rosa</strong>
 
-          <span>Administrador</span>
+          <small>Administrador</small>
 
         </div>
 
