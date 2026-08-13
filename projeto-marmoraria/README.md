@@ -1,16 +1,47 @@
-# React + Vite
+# Sistema Marmoraria
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Sistema de gestão para marmorarias, com tela de login e dashboard administrativo. Projeto em desenvolvimento — atualmente cobre autenticação (tela) e a estrutura inicial do painel.
 
-Currently, two official plugins are available:
+🔗 Deploy: https://sistema-marmoraria-eight.vercel.app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Stack
 
-## React Compiler
+- React 19 + Vite
+- React Router DOM
+- React Icons
+- ESLint
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Como rodar localmente
 
-## Expanding the ESLint configuration
+```bash
+# instalar dependências
+npm install
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# rodar em modo desenvolvimento
+npm run dev
+
+# gerar build de produção
+npm run build
+
+# rodar lint
+npm run lint
+```
+
+## Estrutura do projeto
+
+```
+src/
+├── components/     # componentes reutilizáveis (sidebar, header, cards, etc.)
+├── pages/          # páginas da aplicação (login, dashboard)
+├── routes/         # definição das rotas (react-router-dom)
+├── assets/         # imagens e ícones
+├── app.jsx         # componente raiz
+└── main.jsx        # ponto de entrada
+```
+
+## Status / próximos passos
+
+- [ ] Autenticação real (hoje o login é apenas visual, sem validação nem backend)
+- [ ] Definir backend/banco de dados (clientes, orçamentos, estoque)
+- [ ] Popular o dashboard com dados reais
+- [ ] Testes automatizados
