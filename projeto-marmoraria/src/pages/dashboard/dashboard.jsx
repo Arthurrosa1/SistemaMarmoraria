@@ -2,7 +2,7 @@ import "./dashboard.css";
 
 import Sidebar from "../../components/sidebar/sidebar";
 import Header from "../../components/header/header";
-import DashboardCards from "../../components/dashboardcards/dashboardcards";
+import DashboardCards from "../../components/dashboardCards/dashboardCards";
 
 function Dashboard() {
   return (
