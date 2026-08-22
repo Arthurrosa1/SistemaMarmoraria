@@ -39,12 +39,94 @@ export const pedidosRecentes = [
 ];
 
 export const clientesRecentes = [
-  { nome: "Ricardo Almeida", tipo: "Pessoa física", telefone: "(47) 99811-2233", pedidos: 3, ultimoPedido: "12/08/2026" },
-  { nome: "Fernanda Lopes", tipo: "Pessoa física", telefone: "(47) 99622-1190", pedidos: 1, ultimoPedido: "11/08/2026" },
-  { nome: "Construtora Vale Sul", tipo: "Empresa", telefone: "(47) 3255-4400", pedidos: 12, ultimoPedido: "09/08/2026" },
-  { nome: "João Pedro Nascimento", tipo: "Pessoa física", telefone: "(47) 99944-7712", pedidos: 2, ultimoPedido: "08/08/2026" },
-  { nome: "Studio Arquitetura MZ", tipo: "Empresa", telefone: "(47) 3211-9090", pedidos: 6, ultimoPedido: "06/08/2026" },
-  { nome: "Camila Torres", tipo: "Pessoa física", telefone: "(47) 99123-4455", pedidos: 1, ultimoPedido: "02/08/2026" },
+  { id: "CL-001", nome: "Ricardo Almeida", tipo: "Pessoa física", telefone: "(47) 99811-2233", pedidos: 3, ultimoPedido: "12/08/2026" },
+  { id: "CL-002", nome: "Fernanda Lopes", tipo: "Pessoa física", telefone: "(47) 99622-1190", pedidos: 1, ultimoPedido: "11/08/2026" },
+  { id: "CL-003", nome: "Construtora Vale Sul", tipo: "Empresa", telefone: "(47) 3255-4400", pedidos: 12, ultimoPedido: "09/08/2026" },
+  { id: "CL-004", nome: "João Pedro Nascimento", tipo: "Pessoa física", telefone: "(47) 99944-7712", pedidos: 2, ultimoPedido: "08/08/2026" },
+  { id: "CL-005", nome: "Studio Arquitetura MZ", tipo: "Empresa", telefone: "(47) 3211-9090", pedidos: 6, ultimoPedido: "06/08/2026" },
+  { id: "CL-006", nome: "Camila Torres", tipo: "Pessoa física", telefone: "(47) 99123-4455", pedidos: 1, ultimoPedido: "02/08/2026" },
+];
+
+export const CATEGORIAS_GASTO = [
+  { nome: "Material", cor: "#2563eb" },
+  { nome: "Mão de obra", cor: "#7c3aed" },
+  { nome: "Água/Luz", cor: "#0ea5e9" },
+  { nome: "IPTU", cor: "#f59e0b" },
+  { nome: "Combustível", cor: "#ef4444" },
+  { nome: "Aluguel", cor: "#059669" },
+  { nome: "Outros", cor: "#6b7280" },
+];
+
+export function getCategoriaCor(categoria) {
+  return CATEGORIAS_GASTO.find((c) => c.nome === categoria)?.cor || "#6b7280";
+}
+
+export const gastosIniciais = [
+  {
+    id: "GS-001",
+    titulo: "Compra de chapas de granito",
+    categoria: "Material",
+    valor: 12400,
+    data: "05/08/2026",
+    descricao: "Lote de chapas para o pedido da Construtora Vale Sul.",
+    pedidoId: "PD-2026-039",
+    notaFiscal: "3521 0800 1234 5678 9012 3456 7890 1234 5678 9012 3456",
+    anexoNome: null,
+  },
+  {
+    id: "GS-002",
+    titulo: "Mão de obra - instalação",
+    categoria: "Mão de obra",
+    valor: 2800,
+    data: "07/08/2026",
+    descricao: "Equipe externa para instalação no cliente Studio Arquitetura MZ.",
+    pedidoId: "PD-2026-037",
+    notaFiscal: "",
+    anexoNome: null,
+  },
+  {
+    id: "GS-003",
+    titulo: "Conta de luz - Agosto",
+    categoria: "Água/Luz",
+    valor: 640,
+    data: "10/08/2026",
+    descricao: "Energia elétrica da oficina.",
+    pedidoId: null,
+    notaFiscal: "",
+    anexoNome: null,
+  },
+  {
+    id: "GS-004",
+    titulo: "IPTU - parcela 8",
+    categoria: "IPTU",
+    valor: 380,
+    data: "10/08/2026",
+    descricao: "Parcela mensal do IPTU do galpão.",
+    pedidoId: null,
+    notaFiscal: "",
+    anexoNome: null,
+  },
+  {
+    id: "GS-005",
+    titulo: "Combustível - entregas da semana",
+    categoria: "Combustível",
+    valor: 310,
+    data: "11/08/2026",
+    descricao: "Abastecimento do caminhão para entregas e instalações.",
+    pedidoId: null,
+    notaFiscal: "",
+    anexoNome: null,
+  },
+];
+
+export const receitaTrend = faturamentoTrend;
+
+export const despesaTrendBase = [
+  { mes: "Mar", valor: 9200 },
+  { mes: "Abr", valor: 11500 },
+  { mes: "Mai", valor: 10100 },
+  { mes: "Jun", valor: 13800 },
+  { mes: "Jul", valor: 15200 },
 ];
 
 export function getStatusTone(status) {

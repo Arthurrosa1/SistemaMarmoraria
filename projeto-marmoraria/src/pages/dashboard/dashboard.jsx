@@ -23,11 +23,11 @@ import Sidebar from "../../components/sidebar/sidebar";
 import Header from "../../components/header/header";
 import StatCard from "../../components/statCard/statCard";
 
+import { useData } from "../../data/DataContext";
 import {
   dashboardStats,
   faturamentoTrend,
   materiaisPorCategoria,
-  pedidosRecentes,
   getStatusTone,
 } from "../../data/mockData";
 
@@ -36,6 +36,9 @@ function formatMoney(valor) {
 }
 
 function Dashboard() {
+  const { pedidos } = useData();
+  const pedidosRecentes = pedidos.slice(0, 5);
+
   return (
     <div className="dashboard">
       <Sidebar />
